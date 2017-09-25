@@ -14,11 +14,11 @@ parser.add_argument('-a', '--adults', type=str)
 parser.add_argument('-c', '--children', type=str)
 options = parser.parse_args()
 
-if options.rooms == None:
+if options.rooms is None:
     options.rooms = '1'
-if options.adults == None:
+if options.adults is None:
     options.adults = '2'
-if options.children == None:
+if options.children is None:
     options.children = '0'
 
 DESTINATION = 'Самара, Самарская область, Россия'
@@ -26,6 +26,7 @@ ROOM_NUM = options.rooms
 ADULT_NUM = options.adults
 CHILDREN_NUM = options.children
 MAX_PRICE = 6800
+
 
 def init_chrome_driver():
     directory = os.path.abspath(os.path.dirname(__file__))
@@ -56,9 +57,9 @@ class WebPage:
         try:
             self.driver.get(self.url)
 
-        except Exception as err:
+        except:
             self.driver.quit()
-            sys.exit('Invalid URL address. {}'.format(err))
+            sys.exit('Invalid URL address.')
 
     def quit_driver(self):
         self.driver.quit()
@@ -92,7 +93,7 @@ class WebPage:
         new_hotels = {}
 
         # With different site structure
-        # or hotel_el.find_element_by_class_name('site_price').text)
+        # or hotel_el.find_element_by_class_name('site_price').text
 
         for hotel_el in self.driver.find_elements_by_css_selector("div[data-hotelid]"):
             try:
