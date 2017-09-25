@@ -10,7 +10,7 @@ Search for the best fit hotel in the specified region.
   * duration: 4 days starting from today.
   * number of rooms: 2.
   * number of adults: 1.
-  number of kids: 0.
+  * number of kids: 0.
 3. Press "Начнем!" button.
 4. Iterate through all the pages.
 5. Collect entire resultant hotels list:
