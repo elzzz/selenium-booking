@@ -7,13 +7,16 @@ Steps:
 1. Navigate to the web-site http://booking.com
 2. Fill the filter fields with the values:
   region: "Самарская область, Самара"
-  duration: September, 24 2017 - September, 27 2017
+  duration: 4 days starting from today
   number of rooms: 2
   number of adults: 1
   number of kids: 0
 3. Press Search button
 4. Iterate through all the pages
-5. Collect entire resultant hotels list
+5. Collect entire resultant hotels list:
+* Exclude non-priced hotels from the list
+* Price does not exceed 6800 roubles
+* Hotel has scores to compare.
 6. Iterate through hotels list and get the top scored hotel selected.
 7. Store the screenshot of the chosen hotel.
 
