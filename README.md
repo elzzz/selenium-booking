@@ -3,7 +3,7 @@ booking.com UI test case:
 
 Search for the best fit hotel in the specified region.
 
-### Steps to Reproduce:
+### Steps to reproduce:
 1. Navigate to the web-site http://booking.com
 2. Fill the filter fields with the values:
   * *Region: "Самара, Самарская область, Россия".*
