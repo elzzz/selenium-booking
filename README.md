@@ -26,7 +26,8 @@ ________________________________________________________
 ### Usage:
 1. Make sure prerequisites are installed:
   * Python 3.6
-  * PIP 9.0.1
+  * PIP 9.0.1
+  * Google Chrome 61
 2. Install the libraries:
   > pip -r requirements.txt
 3. Run the test itself:
